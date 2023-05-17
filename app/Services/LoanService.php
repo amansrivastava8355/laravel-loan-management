@@ -161,6 +161,11 @@ class LoanService
         // get the arguments required for loan payment
         $scheduled_payment_uuid = $requestData['scheduled_payment_uuid'];
         $amount = $requestData['amount'];
+        $responseData = [
+            'data' => [],
+            'message' => 'Loan is not approved, so cannot make the payment',
+            'statusCode' => Response::HTTP_OK
+        ];
 
         try {
             // get the scheduled payment record for which payment is requested
