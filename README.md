@@ -28,11 +28,11 @@ After the loan is approved, the user must be able to submit the weekly loan repa
 
 ## Github repo
 
-https://github.com/amansrivastava8355/laraloan
+https://github.com/amansrivastava8355/laravel-loan-management
 
-## Postman API Documentation
+## Postman API Collection
 
-https://documenter.getpostman.com/view/6435819/2s7YfVZVv6
+https://api.postman.com/collections/3532076-03a5d3c9-9af0-4cb4-ac2a-b83ceaa8288f?access_key=PMAT-01H0NAWZSMMCWA5Q13XM0B88YK
 
 ## Features
 
