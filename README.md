@@ -1,5 +1,59 @@
 <h1 align="center">Laravel Loan Management System API</h1>
 
+## Setting up Local Development Environment
+
+It is recommended to use Docker with Laravel Sail for a quick and reliable setup.
+
+- Create a new Docker Network: ```docker network create --driver bridge my-network```
+- Pull mySQL image: ```docker pull mysql/mysql-server```
+- Run mySQL Container: ```docker run --network my-network --name mysql -d -p 3308:3306 -v ~/mysql:/var/lib/mysql -e MYSQL_ROOT_HOST=% -e MYSQL_ROOT_PASSWORD=root mysql/mysql-server --default_authentication_plugin=mysql_native_password```
+- Create Redis Container: ```docker run --network my-network --name redis -d -p 6380:6379 redis```
+- Create Mailhog Container: ```docker run --network my-network --name mailhog -d -p 1025:1025 -p 8025:8025 mailhog/mailhog```
+
+Clone this repo: ```git clone https://github.com/amansrivastava8355/laravel-loan-management```
+
+
+Install Composer:
+```
+docker run --rm \
+    -u "$(id -u):$(id -g)" \
+    -v $(pwd):/opt \
+    -w /opt \
+    laravelsail/php81-composer:latest \
+    composer install --ignore-platform-reqs
+```
+
+Build App Docker Container:
+```
+./vendor/bin/sail build
+```
+
+Set following keys in .env:
+
+```
+APP_PORT=8000
+APP_SERVICE=app
+COMPOSE_PROJECT_NAME=COMPOSE_PROJECT_NAME=lambdatest_loan_management
+```
+
+Fire up Laravel Sail:
+
+```
+./vendor/bin/sail up -d
+```
+Note: Create `sail` alias: https://laravel.com/docs/8.x/sail#configuring-a-bash-alias
+
+
+Running Queues:
+
+```
+php artisan queue:work
+```
+
+Please note any code change requires `php artisan queue:restart`
+
+Refer to https://laravel.com/docs/8.x/queues#supervisor-configuration for Supervisor Configuration in Production
+
 # About
 
 This is a API first approach application built to manage a Loan Management System.
