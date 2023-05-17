@@ -109,15 +109,10 @@ https://documenter.getpostman.com/view/3532076/2s93kz5QBe
 1. Spatie Roles & Permission Package - https://github.com/spatie/laravel-permission
     - for managing users with different permissions and give them access to the required / allowed services only
 
-## Steps to Set up on local machine
-
-1. Get the application files
-    1. download the zip or clone it from github - https://github.com/amansrivastava8355/laravel-loan-management
-    2. put it at `<your-sites-or-htdocs-folder-path>` from where you can load the application
-2. Create a DB in mysql DB with name "petshop"
-3. run `php artisan migrate`
-4. run `php artisan db:seed`
-5. run `php artisan serve`
+2. rename .env.example to .env file
+3. run `./vendor/bin/sail php artisan migrate`
+4. run `./vendor/bin/sail php artisan db:seed`
+5. run `./vendor/bin/sail php artisan serve`
 6. You can access the app at http://127.0.0.1:8000/
 
 ### All the API urls will of format
