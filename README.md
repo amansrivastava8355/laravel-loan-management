@@ -30,9 +30,9 @@ After the loan is approved, the user must be able to submit the weekly loan repa
 
 https://github.com/amansrivastava8355/laravel-loan-management
 
-## Postman API Collection
+## Postman API Document
 
-https://api.postman.com/collections/3532076-03a5d3c9-9af0-4cb4-ac2a-b83ceaa8288f?access_key=PMAT-01H0NAWZSMMCWA5Q13XM0B88YK
+https://documenter.getpostman.com/view/3532076/2s93kz5QBe
 
 ## Features
 
@@ -67,7 +67,7 @@ https://api.postman.com/collections/3532076-03a5d3c9-9af0-4cb4-ac2a-b83ceaa8288f
 ## Steps to Set up on local machine
 
 1. Get the application files
-    1. download the zip or clone it from github - https://github.com/amansrivastava8355/laraloan
+    1. download the zip or clone it from github - https://github.com/amansrivastava8355/laravel-loan-management
     2. put it at `<your-sites-or-htdocs-folder-path>` from where you can load the application
 2. Create a DB in mysql DB with name "petshop"
 3. run `php artisan migrate`
@@ -83,20 +83,20 @@ https://api.postman.com/collections/3532076-03a5d3c9-9af0-4cb4-ac2a-b83ceaa8288f
 
 ### List of avaiable End Points
 
-I had a virtual host setup on my mac configured with `http://laraloan.test` domain, so the routes looked like :
+I had a virtual host setup on my mac configured with `http://laravalloan.test` domain, so the routes looked like :
 
 -   Auth Routes
 
-    -   Register - `http://laraloan.test/api/v1/auth/register`
-    -   Login - `http://laraloan.test/api/v1/auth/login`
-    -   Logout - `http://laraloan.test/api/v1/auth/logout`
+    -   Register - `http://laravalloan.test/api/v1/auth/register`
+    -   Login - `http://laravalloan.test/api/v1/auth/login`
+    -   Logout - `http://laravalloan.test/api/v1/auth/logout`
 
 -   Loan Routes
-    -   Create Loan - `http://laraloan.test/api/v1/loan/create`
-    -   List Loans - `http://laraloan.test/api/v1/loan/list`
-    -   View Loan - `http://laraloan.test/api/v1/loan/<loan_uuid>`
-    -   Approve Loan - `http://laraloan.test/api/v1/loan/approve`
-    -   Repay Loan - `http://laraloan.test/api/v1/loan/payment`
+    -   Create Loan - `http://laravalloan.test/api/v1/loan/create`
+    -   List Loans - `http://laravalloan.test/api/v1/loan/list`
+    -   View Loan - `http://laravalloan.test/api/v1/loan/<loan_uuid>`
+    -   Approve Loan - `http://laravalloan.test/api/v1/loan/approve`
+    -   Repay Loan - `http://laravalloan.test/api/v1/loan/payment`
 
 ### Run Tests
 
