@@ -44,15 +44,6 @@ Fire up Laravel Sail:
 Note: Create `sail` alias: https://laravel.com/docs/8.x/sail#configuring-a-bash-alias
 
 
-Running Queues:
-
-```
-php artisan queue:work
-```
-
-Please note any code change requires `php artisan queue:restart`
-
-Refer to https://laravel.com/docs/8.x/queues#supervisor-configuration for Supervisor Configuration in Production
 
 # About
 
